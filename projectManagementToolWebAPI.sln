@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectManagementToolWebAPI", "projectManagementToolWebAPI\projectManagementToolWebAPI.csproj", "{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementTool", "..\ProjectManagementTool\ProjectManagementTool\ProjectManagementTool.csproj", "{363B6FCF-BB24-4EEB-9B6F-3AC17E350D14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{98AD9A91-75AA-4024-854A-F5D7CC0DE152}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363B6FCF-BB24-4EEB-9B6F-3AC17E350D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363B6FCF-BB24-4EEB-9B6F-3AC17E350D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363B6FCF-BB24-4EEB-9B6F-3AC17E350D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363B6FCF-BB24-4EEB-9B6F-3AC17E350D14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

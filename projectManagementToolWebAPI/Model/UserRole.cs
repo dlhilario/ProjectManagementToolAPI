@@ -8,9 +8,9 @@ namespace projectManagementToolWebAPI.Model
     {
         [Key, DataMember]
         public int ID { get; set; }
-        [DataMember]
+        [DataMember, StringLength(50)]
         public string Role { get; set; }
-        [DataMember]
+        [DataMember, StringLength(150)]
         public string Description { get; set; }
     }
 }

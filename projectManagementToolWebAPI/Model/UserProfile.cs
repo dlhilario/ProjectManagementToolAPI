@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace projectManagementToolWebAPI.Model
@@ -9,6 +10,13 @@ namespace projectManagementToolWebAPI.Model
     [DataContract]
     public class UserProfile
     {
+        [Key, DataMember]
+        public int ID { get; set; }
+        [DataMember, StringLength(50)]
+        public string UserName { get; set; }
+        [DataMember]
+        public Nullable<int> UserRoleId { get; set; }
+        [DataMember]
         private bool hasMessage = false;
         /// <summary>
         /// Check if the user profile has any message
@@ -18,35 +26,27 @@ namespace projectManagementToolWebAPI.Model
         /// <summary>
         /// Profile Message
         /// </summary>
-        [DataMember]
+        [DataMember, StringLength(150)]
         public string Message { get; set; }
         /// <summary>
         /// User Profile ID
         /// </summary>
         [DataMember]
         public int UserId { get; set; }
-        /// <summary>
-        /// User Name
-        /// </summary>
-        [DataMember]
-        public string UserName { get; set; }
+       
         /// <summary>
         /// First Name
         /// </summary>
-        [DataMember]
+        [DataMember, StringLength(150)]
         public string FirstName { get; set; }
         /// <summary>
         /// Last Name
         /// </summary>
-        [DataMember]
+        [DataMember, StringLength(150)]
         public string LastName { get; set; }
-        /// <summary>
-        /// User Role, the role will determine the access level for each user on any page.
-        /// </summary>
-        private UserRole _UserRole = new UserRole();
 
-        [DataMember]
-        public UserRole UserRole { get { return _UserRole; } set { _UserRole = value; } }
+        public string StreetNumber { get; set; }
+        
         /// <summary>
         /// Email Address
         /// </summary>
@@ -55,7 +55,7 @@ namespace projectManagementToolWebAPI.Model
         /// <summary>
         /// Status
         /// </summary>
-        [DataMember]
+        [DataMember, StringLength(15)]
         public string Status { get; set; }
 
         private bool active = false;
@@ -76,5 +76,12 @@ namespace projectManagementToolWebAPI.Model
         /// </summary>
         [DataMember]
         public DateTime LastLoggedIn { get; set; }
+
+        /// <summary>
+        /// User Role, the role will determine the access level for each user on any page.
+        /// </summary>
+     
+        [DataMember]
+        public virtual UserRole UserRole { get; set; }
     }
 }

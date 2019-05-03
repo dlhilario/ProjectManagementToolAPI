@@ -12,14 +12,19 @@ namespace projectManagementToolWebAPI.Model
     public class Attachments
     {
         [Key]
+        [DataMember]
         public int ID { get; set; }
-        [DataMember]
+        [DataMember, StringLength(150)]
         public string FileName { get; set; }
-        [DataMember]
+        [DataMember, StringLength(25)]
         public string Extention { get; set; }
-        [DataMember]
+        [DataMember, StringLength(50)]
         public string FileType { get; set; }
         [DataMember]
+        public string Document { get; set; }
+        [DataMember]
         public DateTime CreatedDate { get; set; }
+        [DataMember]
+        public Nullable<int> ProjectID { get; set; }
     }
 }

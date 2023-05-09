@@ -80,6 +80,7 @@ namespace projectManagementToolWebAPI
         /// Result message
         /// </returns>
         [OperationContract]
+        [ApplyDataContractResolver]
         List<Companies> GetCompanies(int userId);
         /// <summary>
         /// Add a Company
@@ -96,7 +97,7 @@ namespace projectManagementToolWebAPI
         /// </summary>
         /// <param name="Company Id">Company ID</param>
         /// <returns>
-        /// Result Message
+        /// bool
         /// </returns>
         [OperationContract]
         bool DeleteCompany(int CompanyId, int UserID);
@@ -114,30 +115,97 @@ namespace projectManagementToolWebAPI
         /// </summary>
         /// <param name="CompanyID">Company Id</param>
         /// <param name="userID">user id</param>
-        /// <returns></returns>
+        /// <returns>List<Projects></returns>
+        [OperationContract]
         List<Projects> GetProjects(int CompanyID, int userID);
+        /// <summary>
+        /// Get Projects
+        /// </summary>
+        /// <param name="ProjectId">Project ID</param>
+        /// <returns>Projects</returns>
+        [OperationContract]
+        Projects GetProject(int ProjectId, int userID);
         /// <summary>
         /// Add Project 
         /// </summary>
         /// <param name="userId">User Id</param>
         /// <param name="project">Project</param>
-        /// <returns></returns>
+        /// <returns>ProjectResponse</returns>
         [OperationContract]
-        string AddProject(int userId, Projects project);
+        ProjectResponse AddProject(int userId, Projects project);
         /// <summary>
         /// Update Project
         /// </summary>
         /// <param name="userID">User Id</param>
         /// <param name="project">Project</param>
-        /// <returns></returns>
+        /// <returns>string</returns>
         [OperationContract]
-        string UpdateProject(int userID, Projects project);
+        ProjectResponse UpdateProject(int userID, Projects project);
         /// <summary>
         /// Delete Project
         /// </summary>
         /// <param name="userID">User Id</param>
         /// <param name="projectID">Project Id</param>
         /// <returns></returns>
+        [OperationContract]
         bool DeleteProject(int userID, int projectID);
+        /// <summary>
+        /// Get Project Statuses
+        /// </summary>
+        /// <returns>List<ProjectStatus></returns>
+        [OperationContract]
+        List<ProjectStatus> GetProjectStatuses();
+        /// <summary>
+        /// Get List of Material
+        /// </summary>
+        /// <param name="projectId">Project Id</param>
+        /// <param name="userID">UserId</param>
+        /// <returns> List<MaterialList></returns>
+        [OperationContract]
+        List<MaterialList> GetMaterials(int projectId, int userID);
+        /// <summary>
+        /// Get list of comments
+        /// </summary>
+        /// <param name="projectId">Project Id</param>
+        /// <param name="userID">User Id</param>
+        /// <returns>List<Comments></returns>
+        [OperationContract]
+        List<Comments> GetComments(int projectId, int userID);
+        /// <summary>
+        /// Get Project Overview
+        /// </summary>
+        /// <param name="CompanyId"></param>
+        /// <returns>OverviewDetails</returns>
+        [OperationContract]
+        OverviewDetails GetOverView(int CompanyId, int UserId);
+        /// <summary>
+        /// Get Attachments by Id
+        /// </summary>
+        /// <param name="attachmentID">AttachmentID</param>
+        /// <returns>Attachments</returns>
+        [OperationContract]
+        Attachments GetAttachmentById(int attachmentID);
+        /// <summary>
+        /// Get Attachments by projectid and userid
+        /// </summary>
+        /// <param name="ProjectId">ProjectID</param>
+        /// <param name="userId">UserID</param>
+        /// <returns>List<Attachments> </returns>
+        [OperationContract]
+        List<Attachments> GetAttachments(int ProjectId, int userId);
+        /// <summary>
+        /// To Add attachment one at a time
+        /// </summary>
+        /// <param name="attachments">Attachment Object</param>
+        /// <returns>AttachmentResponse</returns>
+        [OperationContract]
+        AttachmentResponse AddAttachments(int userId, Attachments attachments);
+        /// <summary>
+        /// Get Username by user id
+        /// </summary>
+        /// <param name="userId">User Id</param>
+        /// <returns></returns>
+        [OperationContract]
+        string GetUserName(int userId);
     }
 }

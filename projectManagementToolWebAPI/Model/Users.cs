@@ -23,10 +23,9 @@ namespace projectManagementToolWebAPI.Model
         public string SaltPassword { get; set; }
         [DataMember, Required]
         public int UserRoleId { get; set; }
+
         [DataMember]
         public Nullable<int> UserProfileID { get; set; }
-        [DataMember]
-        public Nullable<int> CompanyId { get; set; }
         [DataMember, StringLength(50), Required]
         public string Email { get; set; }
         [DataMember, StringLength(20),]

@@ -15,7 +15,7 @@ namespace projectManagementToolWebAPI.Model
         public DbSet<MaterialList> MaterialList { get; set; }
         public DbSet<Attachments> Attachments { get; set; }
         public DbSet<Comments> Comments { get; set; }
-            
+        public DbSet<ProjectStatus> ProjectStatus { get; set; }
         public DbSet<ErrorLog> ErrorLog { get; set; }
 
         public DbSet<ActivityLog> ActivityLog { get; set; }

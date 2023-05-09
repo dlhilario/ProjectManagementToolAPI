@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{98AD9A
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementToolAPITest", "ProjectManagementToolAPITest\ProjectManagementToolAPITest.csproj", "{EFF7074A-839D-4AAE-8B18-CD08C388B5C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectManagementToolWebAPITests", "projectManagementToolWebAPITests\projectManagementToolWebAPITests.csproj", "{D3CD56E2-BE1C-4A0F-8E87-0CDD88FE19F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5AA3F40-BA8D-4AF5-A0A0-E57447B1A3EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFF7074A-839D-4AAE-8B18-CD08C388B5C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFF7074A-839D-4AAE-8B18-CD08C388B5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFF7074A-839D-4AAE-8B18-CD08C388B5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFF7074A-839D-4AAE-8B18-CD08C388B5C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CD56E2-BE1C-4A0F-8E87-0CDD88FE19F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CD56E2-BE1C-4A0F-8E87-0CDD88FE19F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CD56E2-BE1C-4A0F-8E87-0CDD88FE19F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CD56E2-BE1C-4A0F-8E87-0CDD88FE19F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -47,6 +47,6 @@ namespace projectManagementToolWebAPI.Model
         public Nullable<int> UpdatedByUserID { get; set; }
 
         [DataMember]
-        public virtual List<Projects> Projects { get; set; }
+        public virtual ICollection<Projects> Projects { get; set; }
     }
 }

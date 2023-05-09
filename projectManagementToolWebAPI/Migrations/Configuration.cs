@@ -10,6 +10,7 @@ namespace projectManagementToolWebAPI.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = false;
         }
 
         protected override void Seed(projectManagementToolWebAPI.Model.MGTToolContext context)
